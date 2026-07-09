@@ -51,11 +51,11 @@ L4  SOC / Dev / CSE Worker Agents    — Persistent, segmented, scoped execution
 | Role | Level | Decision Authority | Execution Authority | Reports To |
 |---|---|---|---|---|
 | Founder (madmax) | L0 | Full / absolute | Yes, direct | — |
-| CEO | L1 | None (business only) | No | Founder |
-| Chief Orchestrator | L2 | Can propose (needs approval) | No | Founder / CEO |
-| CISO | L2 | Yes (security); execution needs Founder approval | No | Founder |
+| CEO | L1 | None (business only) | Yes, only after Founder approval | Founder |
+| Chief Orchestrator | L2 | Can propose (needs approval) | Yes, only after Founder approval | Founder / CEO |
+| CISO | L2 | Yes (security); execution needs Founder approval | Yes, only after Founder approval | Founder |
 | SysAdmin | L2 | Can propose (needs approval); root-level privilege, cannot act autonomously on critical ops | Yes, only after Founder approval | Founder, CEO, CISO, Orchestrator |
-| SOC / Dev / CSE Manager | L3 | Limited, team-level | No | Orchestrator, SysAdmin |
+| SOC / Dev / CSE Manager | L3 | Limited, team-level | Yes, limited scoped actions | Orchestrator, SysAdmin |
 | L4 Worker Agents | L4 | None | Yes, limited scoped actions | Their Manager |
 
 <p align="center">
